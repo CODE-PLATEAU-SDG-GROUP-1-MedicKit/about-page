@@ -1,0 +1,91 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    box-sizing: border-box;
+}
+
+#about{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(8, 8, 136);
+    align-content: center;
+}
+
+h1{
+    margin-top: 20px;
+    color: white;
+    text-align: left;
+    font-size: 45px;
+    padding-top: 30px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+
+h1:hover{
+    text-decoration: underline;
+}
+
+.part{
+    /* position: relative; */
+    display: flex;
+    justify-content: center;
+}
+
+.part div{
+    width: 45%;
+    height: 85vh;
+    /* border: 2px solid red; */
+    margin: 45px 10px 0;
+}
+
+.part1{
+    text-align: justify;
+    color: white;
+    order: 2;
+    position: relative;
+}
+
+.part1 p{
+    padding-top: 30px;
+    line-height: 30px;
+    font-size: 20px;
+}
+
+.part1 button{
+    border: none;
+    margin-top: 20px;
+    border-radius: 20px;
+    
+}
+
+.part1 button a{
+    padding: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+    transition: 0.5s;
+}
+
+.part1 button a:hover{
+    color: blue;
+}
+
+.part2{
+    background-image: url(/istockphoto-1149509178-612x612.jpg);
+    background-position: center;
+    border-radius: 30px 10px;
+    background-size: cover;
+    box-shadow: 0 0 6px black;
+    order: 1;
+    transform: scaleX(-1);
+    transition: .8s ease;
+}
+
+.part2:hover{
+    background-image: linear-gradient(to top, rgba(0,0,0,0.7), rgba(204,204,204,0)),
+    url(/photo-1532938911079-1b06ac7ceec7.jpeg);
+}
